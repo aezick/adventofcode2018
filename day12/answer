@@ -1,0 +1,6 @@
+pattern of adding 86000 after a few thousand computations, so grabbed total at 10000 iteration and hand computed the rest with the following equation:
+
+((50000000000 - 10000) / 1000) * 86000 + 862414
+
+resulting in:
+4300000002414
