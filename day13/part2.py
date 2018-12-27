@@ -34,9 +34,13 @@ with open("input13.txt") as f:
 					continue
 				loc = (carts[i][0], carts[i][1])
 				if loc in cart_locs:
-					print("crash:", loc)
-					carts[i][4] = True
-					carts[cart_locs.index(loc)][4] = True
+					# print(carts)
+					for c in carts:
+						if c[0] == loc[0] and \
+							c[1] == loc[1]:
+							c[4] = True
+					# print(carts)
+					# input()
 				else:
 					cart_locs.append(loc)
 
