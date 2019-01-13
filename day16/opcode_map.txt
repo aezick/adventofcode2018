@@ -1,0 +1,28 @@
+# Mapped the opcodes using various if statements for how many opcodes
+# were possible for a given before + args + after combination, and then
+# eliminating already known opcodes
+
+# E.g. elif len(correct) == 1: # and then == 2,3,4 and so on
+#		   print("unique")
+#	       print(correct)
+#		   print(before_regs, args, after_regs)
+
+
+len == 13,?
+
+0  = borr
+1  = seti
+2  = mulr
+3  = eqri
+4  = banr
+5  = bori
+6  = bani
+7  = gtri
+8  = addr
+9  = muli
+10 = addi
+11 = eqrr
+12 = gtir
+13 = eqir
+14 = setr
+15 = gtrr
